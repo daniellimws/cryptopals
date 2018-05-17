@@ -6,7 +6,8 @@ def is_aes_ecb(s):
       return True
   return False
 
-for lines in open('8.txt', 'r'):
-  c = lines.strip().decode('hex')
-  if is_aes_ecb(c):
-    print(c.encode('hex'))
+if __name__ == '__main__':
+	for lines in open('8.txt', 'r'):
+	  c = lines.strip().decode('hex')
+	  if is_aes_ecb(c):
+	    print(c.encode('hex'))
